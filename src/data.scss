@@ -1,0 +1,27 @@
+// Config
+
+@mixin desktop-breakpoint {
+	@media screen and (min-width: map-get($breakpoints, desktop)) {
+		@content;
+	}
+}
+
+
+
+// Base var
+
+$breakpoints: (
+	desktop: 768px,
+);
+
+$primary-color:#FF6060;
+
+$font-size: (
+	mobile: 4vw,
+	desktop: 1rem,
+);
+
+$font-size: (
+	mobile: 4vw,
+	desktop: 1rem,
+);

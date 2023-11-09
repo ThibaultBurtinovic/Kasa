@@ -1,0 +1,64 @@
+.collaspse {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  
+  .collapseTitle {
+    display: flex;
+    align-items: center;
+    background: #FF6060;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .collapseTitle:hover,
+  .active .collapseTitle {
+    cursor: pointer;
+    background: #f74d4d;
+  }
+  
+  .collaspseIcon{
+    position: absolute;
+    align-self: flex-end;
+   padding: 6px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .active .collaspseIcon {
+    transform: rotate(180deg);
+    }
+
+  .collapseContent {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    margin-top: 0%;
+    transition: transform 0.3s ease-in-out;
+    transform: translate(0px, -30px);
+  }
+
+
+  .active .collapseContent {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    margin-top: 0%;
+    opacity: 1;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    padding-top: 45px;
+    padding: 45px 20px 20px 20px;
+    border-radius:  5px 5px;
+    transform: translate(0px, -10px);
+    z-index: -1;
+  }

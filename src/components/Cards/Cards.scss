@@ -1,0 +1,27 @@
+.galleryCard{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+    
+    img{
+        object-fit: cover;
+        border-radius: 10px;
+        height: 340px;
+    }
+
+
+    h3{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        width: 20%;
+        margin-top: 268px;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+
+

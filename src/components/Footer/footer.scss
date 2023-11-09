@@ -1,0 +1,24 @@
+@import "../../data.scss";
+
+.footerWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+
+
+.footerLogo{
+    margin-top: 66px;
+    max-width: 122px;
+}
+
+
+p{
+    color:#FFFFFF ;
+    font-size: 24px;
+    margin: 29px;
+    text-align: center;
+}

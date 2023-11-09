@@ -1,0 +1,40 @@
+@import "../../data.scss";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerWrapper {
+  margin-top: 45px;
+  margin-bottom: 50px;
+  
+  img {
+    max-width: 210px;
+    height: 100%;
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-gap: 57px;
+
+  a {
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  li {
+    color: $primary-color;
+  }
+
+  li:hover {
+    text-decoration: underline;
+  }
+}
