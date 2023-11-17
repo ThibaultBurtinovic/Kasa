@@ -1,8 +1,10 @@
+
 .collaspse {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 8px;
+    
   }
   
   .collapseTitle {
@@ -27,7 +29,7 @@
   .collaspseIcon{
     position: absolute;
     align-self: flex-end;
-   padding: 6px;
+    padding: 6px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
   }
@@ -56,9 +58,44 @@
     opacity: 1;
     background-color: #F6F6F6;
     color: #FF6060;
-    padding-top: 45px;
-    padding: 45px 20px 20px 20px;
+    padding: 35px 20px 20px 20px;
     border-radius:  5px 5px;
     transform: translate(0px, -10px);
     z-index: -1;
+    line-height: 142.6%
   }
+
+ 
+
+
+  .collaspse ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  @media (max-width: 520px) {
+
+    .collapseTitle{
+        font-size: 13px;
+    }
+
+
+    .collaspseIcon{
+      padding-right: 0%;
+      padding-top: 5px;
+    }
+
+    .collaspseIcon img{
+      width: 75%;
+      
+    }
+
+    .collaspse  h4{
+      font-size: 12px;
+    }
+}

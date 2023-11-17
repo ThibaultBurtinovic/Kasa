@@ -1,5 +1,5 @@
 import "./404.scss";
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Erreur404(){
     return (

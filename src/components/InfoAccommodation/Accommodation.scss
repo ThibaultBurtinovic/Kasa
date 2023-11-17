@@ -1,0 +1,201 @@
+@import "../../data.scss";
+
+.accommodation{
+    .title{
+        color: $primary-color;
+        margin: 0%;
+    }
+
+    .subTitle{
+        color: $primary-color;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.ulTags{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.allInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.textInfo{
+    display: flex;
+    flex-direction: column;
+
+    li{
+        background-color: $primary-color;
+        color: #fff;
+        border-radius: 10px;
+        padding: 2px 20px;
+        margin-bottom: 24px;
+    }
+}
+
+.otherInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+
+
+
+.host{
+    display: flex;
+    align-items: center;
+
+    img{
+        border-radius: 50%;
+        width: 64px;
+    }
+
+    span{
+        max-width: 93px;
+        text-align: end;
+        margin-right: 10px;
+    }
+}
+
+.rating{
+    margin-top: 21px;
+    width: 100%;
+
+    img{
+        margin: 3px;
+        width: 100%;
+        max-width:24px ;
+    }
+}
+
+
+
+.collaspseInfo{
+    display: flex;
+    align-items:  flex-start;
+    gap: 76px;
+    width: 100%;
+
+    .callaspseDescription{
+        max-width: 582px;
+        min-width: 300px;
+        
+    }
+
+    .callaspseEquipements{
+        width: 100%;
+        min-width: 300px;
+        
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    .allInfo{
+        flex-direction: column;
+    }
+    
+
+
+    .otherInfo{
+        flex-direction: row;
+        order: 1;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .host{
+        order: 2;
+    }
+
+   
+    .collaspseInfo{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .callaspseDescription{
+            width: 100%;
+            max-width: 650px;
+            margin: 0px 20px 0px 20px;
+        }
+    
+        .callaspseEquipements{
+            width: 100%;
+            max-width: 650px;
+           margin: 0px 20px 0px 20px;
+        }
+
+    }
+
+}
+
+
+
+@media (max-width: 520px) {
+
+.host{
+    font-size: 12px;
+    margin-left: 30px;
+
+    span{
+        width: 50%;
+    }
+    
+}
+
+.rating{
+    display: flex;
+    margin: 0;
+    max-width: 18px;
+}
+
+.textInfo{
+    
+
+    li{
+       text-align: center;
+       align-self: center;
+    }
+}
+
+}
+
+
+@media (max-width: 375px) {
+
+    .title{
+        font-size: 18px;
+    }
+
+    .subTitle{
+        font-size: 14px;
+    }
+    
+    .textInfo{
+    
+
+        li{
+           font-size: 10px;
+           text-align: center;
+           align-self: center;
+        }
+    }
+
+}

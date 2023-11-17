@@ -7,11 +7,13 @@
     .erreur404{
         font-weight: 700;
         font-size: 288px;
+       
     }
 
     .textOups{
         font-size: 36px;
-        margin: 139px;
+        margin: 113px 56px 139px 56px;
+        text-align: center;
     }
 
 
@@ -37,3 +39,34 @@
 
 
 
+@media (max-width: 1024px) {
+   
+    .p404{
+        .erreur404{
+            font-size: 192px;
+        }
+
+        .textOups{
+            font-size: 24px;
+        }
+    }
+  }
+
+
+  
+@media (max-width: 520px) {
+   
+    .p404{
+        .erreur404{
+            font-size: 96px;
+        }
+        
+        .textOups{
+            font-size: 18px;
+        }
+
+        a{
+            font-size: 14px;
+        }
+    }
+  }

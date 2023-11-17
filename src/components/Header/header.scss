@@ -12,12 +12,13 @@ header {
   margin-bottom: 50px;
   
   img {
-    max-width: 210px;
+    width: 100%;
+    
     height: 100%;
   }
 }
 
-ul {
+header ul {
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -32,9 +33,42 @@ ul {
 
   li {
     color: $primary-color;
+    width: 100%;
+    
   }
 
   li:hover {
     text-decoration: underline;
   }
+}
+
+
+@media (max-width: 1024px) {
+  header li {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  header ul {
+    column-gap: 26px;
+  }
+}
+
+
+
+
+@media (max-width: 520px) {
+
+
+  header ul {
+    
+    margin-left: 46px;
+    
+  }
+
+
+  header li {
+    font-size: 12px;
+  }
+
 }

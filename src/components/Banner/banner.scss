@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    height: 225px;
+    max-height: 225px;
     margin-bottom: 43px;
     position: relative;
 
@@ -29,6 +29,21 @@
         color: #ffffff;
         font-size: 48px;
         position: absolute; 
+        margin: 16px;
     }
 
+}
+
+
+
+
+
+
+@media (max-width: 520px) {
+
+   .banner .banner-txt{
+        font-size: 24px;
+        
+        
+    }
 }

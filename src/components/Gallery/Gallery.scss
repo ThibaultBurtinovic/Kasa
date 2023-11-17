@@ -3,7 +3,19 @@ main{
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
+    row-gap: 50px;
     padding: 50px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    main{
+        padding: 10px;
+        row-gap: 20px;
+    }
+    
 }
