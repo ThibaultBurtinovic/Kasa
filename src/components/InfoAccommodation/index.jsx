@@ -11,7 +11,7 @@ export default function Accommodation({ lastSegment }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/annonce.json');
+        const response = await fetch('/annonces.json');
         const data = await response.json();
         setDatas(data);
       } catch (error) {
