@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kasa/static/css/main.001a8c3f.css",
-    "main.js": "/Kasa/static/js/main.5bb889b9.js",
+    "main.js": "/Kasa/static/js/main.6ce17ff2.js",
     "static/media/BannerIMG.png": "/Kasa/static/media/BannerIMG.19221376a0aa2549c135.png",
     "static/media/AProposBanner.jpg": "/Kasa/static/media/AProposBanner.e54ae93d36cfba861b65.jpg",
     "static/media/LOGO.svg": "/Kasa/static/media/LOGO.69a3df082e3c5a974ce0abfe5dc4be4e.svg",
@@ -13,10 +13,10 @@
     "static/media/ArrowRight.svg": "/Kasa/static/media/ArrowRight.88153a5d119c2744ffe34dca1ef843df.svg",
     "static/media/ArrowLeft.svg": "/Kasa/static/media/ArrowLeft.19918a1634b1441a25ae0b50e6b1f85b.svg",
     "main.001a8c3f.css.map": "/Kasa/static/css/main.001a8c3f.css.map",
-    "main.5bb889b9.js.map": "/Kasa/static/js/main.5bb889b9.js.map"
+    "main.6ce17ff2.js.map": "/Kasa/static/js/main.6ce17ff2.js.map"
   },
   "entrypoints": [
     "static/css/main.001a8c3f.css",
-    "static/js/main.5bb889b9.js"
+    "static/js/main.6ce17ff2.js"
   ]
 }
