@@ -10,7 +10,7 @@ export default function Carousel({ lastSegment }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/annonces.json');
+        const response = await fetch('/annonce.json');
         const data = await response.json();
         setDatas(data);
       } catch (error) {
