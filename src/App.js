@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Kasa" element={<Home />} />
         <Route path="/a-propos" element={<APropos />} />
         <Route path="/Annonces/:annonceId" element={<Annonces />} />
         <Route path="*" element={<Erreur404 />} />

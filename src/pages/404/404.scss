@@ -17,19 +17,22 @@
     }
 
 
-    a{
+    button{
         font-size: 18px; 
         margin-bottom: 129px;
         cursor: pointer;
         padding: 10px;
-        text-decoration: none;
         color: #FF6060;
+        border: none;
+        background-color: #FFFF;
+        font-family: Montserrat;
     }
 
-    a:hover{
+    button:hover{
         background-color: #F6F6F6;
         color: #ff1414;
         border-radius: 20px;
+        text-decoration: underline;
     }
 
 
@@ -65,7 +68,7 @@
             font-size: 18px;
         }
 
-        a{
+        button{
             font-size: 14px;
         }
     }

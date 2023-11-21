@@ -6,13 +6,13 @@ import './header.scss'
 function Header() {
   return (
     <header className="headerWrapper">
-        <Link to='/'>
+        <Link to='/Kasa'>
       <img src={logo} alt="Kasa Logo" className="nav-logo" />
         </Link>
         
       <nav className="nav">
         <ul>
-            <NavLink to='/'>
+            <NavLink to='/Kasa'>
             <li>Accueil</li>
             </NavLink>
             <NavLink to='A-propos'>
