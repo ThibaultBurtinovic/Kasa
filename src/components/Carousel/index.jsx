@@ -22,25 +22,32 @@ export default function Carousel({ lastSegment }) {
   }, []);
 
   const filteredPictures = datas.filter(data => data.id === lastSegment);
+  const totalPictures = filteredPictures.length > 0 ? filteredPictures[0].pictures.length : 0;
 
   const nextSlide = () => {
-    setSlide(slide === filteredPictures[0].pictures.length - 1 ? 0 : slide + 1);
+    setSlide(slide === totalPictures - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? filteredPictures[0].pictures.length - 1 : slide - 1);
+    setSlide(slide === 0 ? totalPictures - 1 : slide - 1);
   };
 
   return (
     <div className="carrousel">
       <div className="arrow">
-        <img src={ArrowLeft} alt="Left" className='arrow arrowLeft' onClick={prevSlide}></img>
-        <img src={ArrowRight} alt="Right" className='arrow arrowRight' onClick={nextSlide}></img>
+        {totalPictures > 1 && (
+          <img src={ArrowLeft} alt="Left" className='arrow arrowLeft' onClick={prevSlide}></img>
+        )}
+        {totalPictures > 1 && (
+          <img src={ArrowRight} alt="Right" className='arrow arrowRight' onClick={nextSlide}></img>
+        )}
       </div>
-      <div className="slideInfo">
-      {`${slide + 1} / ${filteredPictures.length > 0 ? filteredPictures[0].pictures.length : 0}`}
-    </div>
-      {filteredPictures.length > 0 && (
+      {totalPictures > 1 && (
+        <div className="slideInfo">
+          {`${slide + 1} / ${totalPictures}`}
+        </div>
+      )}
+      {totalPictures > 0 && (
         <div key={filteredPictures[0].id}>
           {filteredPictures[0].pictures.map((picture, index) => (
             <img key={index} src={picture} alt={`Picture ${index}`} className={slide === index ? "slide" : "slide slide-hidden"} />

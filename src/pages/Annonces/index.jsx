@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Carousel from "../../components/Carousel";
 import Accommodation from "../../components/InfoAccommodation";
-import Erreur404 from '../../pages/404'; 
+import Erreur404 from '../../pages/404';
 
 function Annonces() {
-    const [lastSegment, setLastSegment] = useState('');
+    const { annonceId } = useParams();
     const [datas, setDatas] = useState([]);
     const [notFound, setNotFound] = useState(false);
     const [dataFetched, setDataFetched] = useState(false);
@@ -25,20 +26,14 @@ function Annonces() {
     }, []);
 
     useEffect(() => {
-        const currentURL = window.location.pathname;
-        const segment = currentURL.substring(currentURL.lastIndexOf('/') + 1);
-        setLastSegment(segment);
-    }, []);
-
-    useEffect(() => {
-        const foundData = datas.find(data => data.id === lastSegment);
+        const foundData = datas.find(data => data.id === annonceId);
 
         if (!foundData) {
             setNotFound(true);
         } else {
             setNotFound(false);
         }
-    }, [datas, lastSegment]);
+    }, [datas, annonceId]);
 
     if (notFound && dataFetched) {
         return <Erreur404 />;
@@ -46,8 +41,8 @@ function Annonces() {
 
     return (
         <section className='annonces'>
-            <Carousel lastSegment={lastSegment}></Carousel>
-            <Accommodation lastSegment={lastSegment}></Accommodation>
+            <Carousel lastSegment={annonceId}></Carousel>
+            <Accommodation lastSegment={annonceId}></Accommodation>
         </section>
     );
 }

@@ -63,9 +63,11 @@
     }
 
     span {
-        max-width: 93px;
+        max-width: 80px;
         text-align: end;
         margin-right: 10px;
+        color: $primary-color;
+        font-weight: 500;
     }
 }
 
